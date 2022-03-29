@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.101" timestamp="2022-03-29T13:01:40.116118" hostname="AsusZephyrusG14"><testcase classname="test_prime" name="test_Prime[13-True]" time="0.001" /><testcase classname="test_prime" name="test_Prime[4-False]" time="0.001" /><testcase classname="test_prime" name="test_Prime[7-True]" time="0.001" /><testcase classname="test_prime" name="test_Prime[8-True]" time="0.001"><failure message="assert False == True">a = 8, res = True
+
+    @pytest.mark.parametrize("a,res",[(13,True),(4,False),(7,True),(8,True)])
+    def test_Prime(a,res):
+        result = primeornot.primeornot(a)
+&gt;       assert result == res
+E       assert False == True
+
+test_prime.py:7: AssertionError</failure></testcase></testsuite></testsuites>
